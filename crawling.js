@@ -1,6 +1,5 @@
 const request = require('request');
 const cheerio = require('cheerio');
-
 const url = "https://datalab.naver.com/keyword/realtimeList.naver";
 
 request({
@@ -17,7 +16,6 @@ request({
     for(let i=0; i<age_all.length; i++){
         console.log(age_all[i].children[0].data);
     } 
-
 });
 
 
